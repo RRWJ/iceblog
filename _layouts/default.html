@@ -1,23 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-
-{% include head.html %}
-
-<!-- hack iOS CSS :active style -->
-<body ontouchstart="">
-
+<html>
+  {% include head.html %}
+  <body>
     {% include nav.html %}
-    {% include search.html %}
 
-    {{ content }}
+    {% if page.toc==true %}
+      <aside class="toc">
+        {% include toc.html html=content %}
+      </aside>
+    {% endif %}
 
-    {% include footer.html %}
+    <div id="main" role="main" class="wrapper-content">
+      <div class="container">
+        {{ content }}
+      </div>
+    </div>
 
+  </body>
 
-<!-- Image to hack wechat -->
-<img src="/img/icon_wechat.png" width="0" height="0" />
-<!-- Migrate from head to bottom, no longer block render and still work -->
+  {% if page.toc==true %}
+  <script>
+    document.getElementById("main").classList.add("withtoc");
+  </script>
+  {% endif %}
 
-</body>
+  <div class="wrapper-footer-mobile">
+    <footer class="footer">
+      {% include footer.html %}
+    </footer>
+
 
 </html>
