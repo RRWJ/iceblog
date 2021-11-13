@@ -11,14 +11,7 @@ baseurl: ""                             # for example, '/blog' if your blog host
 # Publish posts or collection documents with a future date.
 future: true
 
-# SNS settings
-RSS: false
-# weibo_username:     huxpro
-# zhihu_username:     huxpro
 github_username:    rrwj
-# twitter_username:   huxpro
-#facebook_username:  huxpro
-#linkedin_username:  firstname-lastname-idxxxx
 
 
 
@@ -28,7 +21,7 @@ highlighter: rouge
 permalink: pretty
 paginate: 10
 # exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
-anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+anchorjs: fasle                          # if you want to customize anchor. check out line:181 of `post.html`
 # If you have timezone issue (e.g. #68) in China, uncomment to use this:
 #timezone: CN  
 
@@ -58,7 +51,7 @@ kramdown:
 
 
 # Disqus settings
-disqus_username: hux
+
 
 # Netease settings
 netease_comment: false
@@ -70,8 +63,8 @@ netease_comment: false
 # ba_track_id: [your track id]
 
 # Google Analytics
-ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
-ga_domain: huangxuan.me
+ga_track_id:             # Format: UA-xxxxxx-xx
+ga_domain: 
 
 
 
