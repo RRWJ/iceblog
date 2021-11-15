@@ -1,28 +1,31 @@
 ---
-layout: default
+layout: base
 ---
 
-<!-- Post Header -->
-{% include intro-header.html type='post' %}
+{% include header.html type="page" %}
 
-<!-- Main Content -->
-<div class="main">
-  <section id="one" class="wrapper-content">
-    <!-- NO SIDEBAR -->
-    <!-- PostList Container -->
-    <div class="container">
+<div class="{% if page.full-width %} container-fluid {% else %} container-md {% endif %}" role="main">
+  <div class="row">
+    <div class="{% if page.full-width %} col {% else %} col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 {% endif %}">
+      {% if page.before-content %}
+        <div class="before-content">
+          {% for file in page.before-content %}
+            {% include {{ file }} %}
+          {% endfor %}
+        </div>
+      {% endif %}
+
       {{ content }}
-    </div>
-    <!-- Sidebar Container -->
-    <div class="container">
-      <!-- Featured Tags -->
-      {% include featured-tags.html %}
 
+      {% if page.after-content %}
+        <div class="after-content">
+          {% for file in page.after-content %}
+            {% include {{ file }} %}
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      {% include comments.html %}
     </div>
-  </section>
+  </div>
 </div>
-
-</script>
-<script type="text/javascript"
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-{% endif %}
