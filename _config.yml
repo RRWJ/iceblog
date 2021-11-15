@@ -15,9 +15,9 @@ author: w
 
 navbar-links:
   Home: "https://rrwj.github.io/iceblog/"
-  Archive: "archive.html"
-  Tags: "tags.html"
-  About Me: "aboutme.md"
+  Archive: "archive"
+  Tags: "tags"
+  About Me: "aboutme"
   # Resources:
   #   - Beautiful Jekyll: "https://beautifuljekyll.com"
   #   - Learn markdown: "https://www.markdowntutorial.com/"
