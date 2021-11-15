@@ -6,10 +6,10 @@
 # --- Required options --- #
 
 # Name of website
-title: Ice Blog
+title: IceBeauty
 
 # Your name to show in the footer
-author: w
+author: IceBeauty
 
 # --- List of links in the navigation bar --- #
 
@@ -27,14 +27,14 @@ navbar-links:
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/avatar-icon.png"
+avatar: "/assets/img/avatar-icon.jpg"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
-round-avatar: true
+round-avatar: false
 
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
-#title-img: /path/to/image
+# title-img: "/assets/img/avatar-icon.jpg"
 
 
 # --- Footer social media links --- #
@@ -117,9 +117,9 @@ footer-hover-col: "#0085A1"
 # Alternatively, the navbar, footer, and page background can be set to an image
 # instead of colour
 
-#navbar-img: "/assets/img/bgimage.png"
-#footer-img: "/assets/img/bgimage.png"
-#page-img: "/assets/img/bgimage.png"
+# navbar-img: "/images/bg.jpg"
+# footer-img: "/images/bg.jpg"
+# page-img: "/images/bg.jpg"
 
 # Suggest a colour for mobile browsers to use as the browser's theme. This is only supported by a few mobile browsers.
 #mobile-theme-col: "#0085A1"
@@ -213,7 +213,7 @@ date_format: "%B %-d, %Y"
 # --- You don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "Asia/Harbin"
+timezone: "Asia/Shanghai"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
@@ -246,13 +246,8 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - README.md
-  - screenshot.png
   - docs/
 
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
-
-# Beautiful Jekyll / Dean Attali
-# 2fc73a3a967e97599c9763d05e564189
-

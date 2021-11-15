@@ -11,11 +11,11 @@
         </div>
       {% endif %}
       <p class="copyright text-muted">
-      {% if site.author %}
+        CopyRight © {{ site.time | date: '%Y' }}
+      &nbsp;&bull;&nbsp;
+      Dessign:{% if site.author %}
         {{ site.author }}
-        &nbsp;&bull;&nbsp;
       {% endif %}
-      {{ site.time | date: '%Y' }}
 
       {% if site.url-pretty %}
         &nbsp;&bull;&nbsp;
