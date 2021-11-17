@@ -5,7 +5,7 @@ tags: [Github]
 comments: true
 ---
 
-#### 每次push都发送一封邮件，强迫症很蓝瘦;(
+#### 每次push都发送一封邮件，强迫症表示很蓝瘦;(
 ```
 The page build completed successfully, but returned the following warning for the `main` branch:
 
@@ -24,7 +24,7 @@ Warning: We strongly recommend not using wildcard DNS records, such as *.example
 #### 2. StackOverflow问答
 ##### https://stackoverflow.com/questions/9082499/custom-domain-for-github-project-pages
 
-####  配置过程：
+###  配置过程：
 #### 1. 购买域名18元/年；
 #### 2. 查看Github Pages在国外的IP地址；
 ```
@@ -32,3 +32,15 @@ ping xxx.github.io
 ```
 #### 3. 修改DNS，参考链接：
 #### https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages
+#### 4. 确认DNS记录是否正确
+```
+$ dig WWW.EXAMPLE.COM +nostats +nocomments +nocmd
+    > ;WWW.EXAMPLE.COM.                     IN      A
+    > WWW.EXAMPLE.COM.              3592    IN      CNAME   YOUR-USERNAME.github.io.
+    > YOUR-USERNAME.github.io.      43192   IN      CNAME    GITHUB-PAGES-SERVER .
+    >  GITHUB-PAGES-SERVER .         22      IN      A       192.0.2.1
+```
+#### 5. 测试
+```
+dig NS WWW.EXAMPLE.COM
+```
