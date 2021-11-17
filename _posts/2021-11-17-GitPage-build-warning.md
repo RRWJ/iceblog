@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  Page build warning
+subtitle: bug
+date: 2021-11-17
 tags: [Github]
-comments: true
+comments: false
 ---
 
 #### 每次push都发送一封邮件，强迫症表示很蓝瘦;(
