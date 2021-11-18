@@ -12,10 +12,6 @@ comments: false
 The page build completed successfully, but returned the following warning for the `main` branch:
 
 The custom domain `#填上自己的域名（如果有申请）` is not properly formatted. See https://docs.github.com/articles/troubleshooting-custom-domains/#github-repository-setup-errors for more information.
-
-For information on troubleshooting Jekyll see:
-
-  https://docs.github.com/articles/troubleshooting-jekyll-builds
 ```
 ```
 Warning: We strongly recommend not using wildcard DNS records, such as *.example.com. A wildcard DNS record will allow anyone to host a GitHub Pages site at one of your subdomains.
