@@ -217,7 +217,8 @@ timezone: "Asia/Shanghai"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
-paginate: 5
+# how many items should be displayed per page:
+paginate: 9
 
 kramdown:
   input: GFM
