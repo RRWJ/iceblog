@@ -1,6 +1,7 @@
 ---
 layout: post
-title: 埃拉托斯特尼筛法
+title: Sieve of Eratosthenes
+subtitle: 埃拉托斯特尼筛法
 date: 2021-11-23
 tags: [算法][Leetcode]
 comments: false
