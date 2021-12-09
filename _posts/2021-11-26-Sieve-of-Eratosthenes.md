@@ -3,7 +3,7 @@ layout: post
 title: 埃拉托斯特尼筛法
 subtitle: Sieve of Eratosthenes
 date: 2021-11-26 16:20:00 +0800
-tags: [算法]
+tags: [算法, Leetcode]
 comments: false
 ---
 #### 204. 计数质数
