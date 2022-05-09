@@ -1,8 +1,9 @@
 ---
 layout: post
 title: rpc mitnotes
-date: 2022-04-10
-tags: [distributed system][MIT6.824]
+subtitle: rpc
+date: 2022-04-10 16:08:00 +0800
+tags: [Go][rpc][MIT6.824]
 comments: false
 ---
 
