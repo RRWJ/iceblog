@@ -1,8 +1,8 @@
 ---
 layout: post
-title: rpc mitnotes
+title: RPC MitNote 笔记
 subtitle: rpc
-date: 2022-04-10 16:08:00 +0800
+date: 2022-04-10
 tags: [Go][rpc][MIT6.824]
 comments: false
 ---
